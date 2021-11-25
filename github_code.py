@@ -13,6 +13,7 @@ from sqlalchemy import create_engine
 import pymysql
 from ttictoc import tic,toc
 import logging
+#import
 
 def check_throttle(response):
     if response.headers['X-RateLimit-Remaining'] <= str(1):
